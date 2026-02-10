@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KDJ Cream - Glow with Confidence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        kdj: {
+                            gold: '#D4AF37',
+                            pink: '#FCE7F3',
+                            dark: '#1F2937'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-3xl font-bold text-gray-900 tracking-wider">KDJ <span class="text-yellow-600">CREAM</span></a>
+            <div class="hidden md:flex space-x-8 text-gray-600 font-medium">
+                <a href="index.html" class="hover:text-yellow-600 transition">Home</a>
+                <a href="shop.html" class="hover:text-yellow-600 transition">Shop</a>
+                <a href="contact.html" class="hover:text-yellow-600 transition">Contact</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t p-4">
+            <a href="index.html" class="block py-2 text-gray-600">Home</a>
+            <a href="shop.html" class="block py-2 text-gray-600">Shop</a>
+            <a href="contact.html" class="block py-2 text-gray-600">Contact</a>
+        </div>
+    </nav>
+
+    <section class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?q=80&w=1920&auto=format&fit=crop');">
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="relative z-10 text-center text-white px-4">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">Discover Your True Glow</h1>
+            <p class="text-xl md:text-2xl mb-8 font-light">Premium organic skincare for radiant skin.</p>
+            <a href="shop.html" class="bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
+                Shop Now
+            </a>
+        </div>
+    </section>
+
+    <section class="py-20 bg-kdj-pink">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Why Choose KDJ Cream?</h2>
+                <div class="w-24 h-1 bg-yellow-600 mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow-2xl transition">
+                    <div class="text-yellow-600 mb-4 text-4xl">🌿</div>
+                    <h3 class="text-2xl font-bold mb-3">100% Organic</h3>
+                    <p class="text-gray-600">Made from natural ingredients carefully selected for your skin.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow-2xl transition">
+                    <div class="text-yellow-600 mb-4 text-4xl">✨</div>
+                    <h3 class="text-2xl font-bold mb-3">Instant Glow</h3>
+                    <p class="text-gray-600">See visible results within days. Shine like never before.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow-2xl transition">
+                    <div class="text-yellow-600 mb-4 text-4xl">🛡️</div>
+                    <h3 class="text-2xl font-bold mb-3">UV Protection</h3>
+                    <p class="text-gray-600">Protects your skin from harmful sun rays while nourishing it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 flex flex-col md:flex-row items-center container mx-auto px-6">
+        <div class="md:w-1/2 mb-10 md:mb-0">
+            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=800&auto=format&fit=crop" alt="KDJ Cream Bottle" class="rounded-lg shadow-2xl w-full max-w-md mx-auto">
+        </div>
+        <div class="md:w-1/2 md:pl-12">
+            <h2 class="text-4xl font-bold mb-6">The KDJ Miracle Cream</h2>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+                Experience the magic of KDJ. Our signature formula penetrates deep into the skin layers to hydrate, repair, and rejuvenate. Perfect for all skin types.
+            </p>
+            <ul class="space-y-3 mb-8 text-gray-700">
+                <li class="flex items-center"><span class="text-yellow-600 mr-2">✓</span> Deep Hydration</li>
+                <li class="flex items-center"><span class="text-yellow-600 mr-2">✓</span> Anti-Aging Properties</li>
+                <li class="flex items-center"><span class="text-yellow-600 mr-2">✓</span> Non-Greasy Formula</li>
+            </ul>
+            <a href="shop.html" class="border-2 border-gray-900 text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-900 hover:text-white transition">Buy Now</a>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-2xl font-bold mb-4">KDJ CREAM</h2>
+            <p class="text-gray-400 mb-6">Your beauty, our priority.</p>
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="#" class="hover:text-yellow-500">Facebook</a>
+                <a href="#" class="hover:text-yellow-500">Instagram</a>
+                <a href="#" class="hover:text-yellow-500">WhatsApp</a>
+            </div>
+            <p class="text-gray-500 text-sm">&copy; 2024 KDJ Cream. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
